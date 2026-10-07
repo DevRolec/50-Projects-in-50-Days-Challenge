@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #111827;
+
+    font-family: Arial, sans-serif;
+}
+
+.todo-container {
+    width: 500px;
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #6b7280;
+}
+
+/* INPUT */
+
+.input-section {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+#taskInput:focus {
+    border-color: #f57c00;
+}
+
+#addBtn {
+    border: none;
+
+    padding: 14px 20px;
+
+    background: #4af102;
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+#addBtn:hover {
+    background: #e66f00;
+}
+
+/* TASK INFORMATION */
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    color: #6b7280;
+}
+
+#clearBtn {
+    background: transparent;
+
+    border: none;
+
+    color: #dc2626;
+
+    cursor: pointer;
+}
+
+#clearBtn:hover {
+    text-decoration: underline;
+}
+
+/* TASK LIST */
+
+#taskList {
+    list-style: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background: #f3f4f6;
+
+    border-radius: 8px;
+}
+
+.task span {
+    flex: 1;
+
+    margin-left: 10px;
+
+    color: #1f2937;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+
+    color: #9ca3af;
+}
+
+.delete-btn {
+    border: none;
+
+    background: #710707;
+    color: white;
+
+    padding: 7px 10px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+
+    .todo-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+
+    #addBtn {
+        width: 100%;
+    }
+}
