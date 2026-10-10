@@ -1,68 +1,181 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page Day 08</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Jenga Tech | Laptop Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--NAV-->
+
+    <!-- NAVIGATION -->
     <header class="navbar">
-        <a href="#" class="logo">JENGA<span>TECH</span></a>
+        <a href="#" class="logo">
+            JENGA<span>TECH</span>
+        </a>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#features">Features</a>
-            <a href="#testimonials">Testimonials</a>
+            <a href="#specifications">Specifications</a>
             <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#purchase" class="nav-btn">Shop Now</a>
+        <a href="#purchase" class="nav-btn">
+            Shop Now
+        </a>
     </header>
 
-    <!--HERO SECTION-->
-<main>
-    <section class="hero" id="hero">
+    <!-- HERO SECTION -->
+    <main>
+        <section class="hero" id="home">
 
-    <h1>Power Your <span>Business.</span></h1> 
-  <p>
-    Experience performance speed and reliability with our premium laptops.
-    Perfect for developers, designers, business Professionals and Students.
-  </p>   
+            <div class="hero-content">
+                <span class="tag">PREMIUM LAPTOP COLLECTION</span>
 
-  <div class="price">
-    <span class="old-price">#650,000</span> 
-    <h2>#550,000</h2>
+                <h1>
+                    Power Your
+                    <span>Productivity.</span>
+                </h1>
 
-   <div class="hero-buttons">
-    <a href="#purchase" class="btn-primary">Buy Now</a>
-    <a href="#features" class="btn-secondary">Learn More</a>
-   </div>
-  </div>
+                <p>
+                    Experience performance, speed and
+                    reliability with our premium laptops.
+                    Perfect for developers, designers,
+                    students and business professionals.
+                </p>
 
-  <div class="hero-image">
-    <img src="images/laptop.png" alt="laptop">
-  </div>
+                <div class="price">
+                    <span class="old-price">₦650,000</span>
+                    <h2>₦550,000</h2>
+                </div>
 
-    </section>
- <!--FEATURES SECTION-->
- <section class="features" id="features">
-    <section class="heading">
-        <h2> Why Choose This Laptop</h2>
-        <p>
-            Our laptops are designed to provide the best performance and reliability
-             for your business needs, and sleek design, 
-             you can work efficiently and effectively.
+                <div class="hero-buttons">
+                    <a href="#purchase" class="btn-primary">
+                        Buy Now
+                    </a>
+
+                    <a href="#features" class="btn-secondary">
+                        Explore Features
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/laptop.png"
+                     alt="Premium laptop">
+            </div>
+
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features" id="features">
+
+            <div class="section-heading">
+                <h2>Why Choose This Laptop?</h2>
+                <p>
+                    Designed for performance,
+                    productivity and convenience.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Performance</h3>
+                    <p>
+                        Powerful processing for coding,
+                        multitasking and everyday work.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Premium Display</h3>
+                    <p>
+                        Enjoy sharp visuals for work,
+                        entertainment and creativity.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Portable Design</h3>
+                    <p>
+                        Work comfortably at home,
+                        school or on the move.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SPECIFICATIONS -->
+        <section class="specifications" id="specifications">
+
+            <div class="section-heading">
+                <h2>Technical Specifications</h2>
+                <p>Everything you need to know.</p>
+            </div>
+
+            <div class="spec-box">
+                <div>
+                    <span>Processor</span>
+                    <strong>Intel Core i7</strong>
+                </div>
+
+                <div>
+                    <span>Memory</span>
+                    <strong>16GB RAM</strong>
+                </div>
+
+                <div>
+                    <span>Storage</span>
+                    <strong>512GB SSD</strong>
+                </div>
+
+                <div>
+                    <span>Display</span>
+                    <strong>15.6-inch Full HD</strong>
+                </div>
+
+                <div>
+                    <span>Operating System</span>
+                    <strong>Windows 11</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PURCHASE -->
+        <section class="purchase" id="purchase">
+            <h2>Ready to Upgrade Your Laptop?</h2>
+
+            <p>
+                Get the performance you need
+                for your next big project.
+            </p>
+
+            <a href="mailto:sales@example.com?subject=Laptop%20Purchase%20Inquiry"
+               class="btn-primary">
+                Order Now
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <h3>JENGA<span>TECH</span></h3>
+
+        <p>Technology for a smarter future.</p>
+
+        <p class="copyright">
+            © 2026 Jenga Tech. All Rights Reserved.
         </p>
-    </section>
-
- </section>
-
-
-
-
-
-</main>
+    </footer>
 
 </body>
 </html>
