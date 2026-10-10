@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 10 | Grade Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">
+                JENGA<span>TECH</span>
+            </div>
+
+            <span class="project-tag">
+                DAY 10 PROJECT
+            </span>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <section class="intro">
+            <div class="icon">🎓</div>
+
+            <h1>Student Grade Calculator</h1>
+
+            <p>
+                Enter student details and subject
+                scores to evaluate academic performance.
+            </p>
+        </section>
+
+        <!-- CALCULATOR FORM -->
+        <form class="calculator">
+
+            <!-- STUDENT INFORMATION -->
+            <section class="card">
+
+                <h2>Student Information</h2>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentName"
+                            placeholder="Enter full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentClass">
+                            Class / Grade
+                        </label>
+
+                        <select id="studentClass">
+                            <option value="">
+                                Select Class
+                            </option>
+                            <option>Grade 7</option>
+                            <option>Grade 8</option>
+                            <option>Grade 9</option>
+                            <option>Grade 10</option>
+                            <option>Grade 11</option>
+                            <option>Grade 12</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- SUBJECT SCORES -->
+            <section class="card">
+
+                <div class="section-heading">
+                    <h2>Subject Scores</h2>
+                    <span>Maximum: 100 per subject</span>
+                </div>
+
+                <div class="subject-row">
+                    <label for="math">Mathematics</label>
+                    <input type="number" id="math"
+                           min="0" max="100"
+                           placeholder="0 - 100">
+                </div>
+
+                <div class="subject-row">
+                    <label for="english">English Language</label>
+                    <input type="number" id="english"
+                           min="0" max="100"
+                           placeholder="0 - 100">
+                </div>
+
+                <div class="subject-row">
+                    <label for="physics">Physics</label>
+                    <input type="number" id="physics"
+                           min="0" max="100"
+                           placeholder="0 - 100">
+                </div>
+
+                <div class="subject-row">
+                    <label for="chemistry">Chemistry</label>
+                    <input type="number" id="chemistry"
+                           min="0" max="100"
+                           placeholder="0 - 100">
+                </div>
+
+                <div class="subject-row">
+                    <label for="biology">Biology</label>
+                    <input type="number" id="biology"
+                           min="0" max="100"
+                           placeholder="0 - 100">
+                </div>
+
+            </section>
+
+            <!-- ACTION BUTTONS -->
+            <div class="actions">
+
+                <button type="button"
+                        class="calculate-btn">
+                    Calculate Grade
+                </button>
+
+                <button type="reset"
+                        class="reset-btn">
+                    Clear All
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- RESULTS -->
+        <section class="results">
+
+            <h2>Performance Summary</h2>
+
+            <div class="results-grid">
+
+                <div class="result-card">
+                    <p>Total Score</p>
+                    <h3>395 / 500</h3>
+                </div>
+
+                <div class="result-card">
+                    <p>Average Score</p>
+                    <h3>79%</h3>
+                </div>
+
+                <div class="result-card">
+                    <p>Final Grade</p>
+                    <h3>B</h3>
+                </div>
+
+            </div>
+
+            <div class="status">
+                <span>Performance Status</span>
+                <strong>PASS</strong>
+            </div>
+
+            <p class="sample-note">
+                Sample results for design demonstration.
+                Automatic calculation requires JavaScript.
+            </p>
+
+        </section>
+
+        <!-- GRADING SCALE -->
+        <section class="card grading-section">
+
+            <h2>Grading System</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Score Range</th>
+                        <th>Grade</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>90 - 100</td>
+                        <td>A</td>
+                        <td>Excellent</td>
+                    </tr>
+
+                    <tr>
+                        <td>80 - 89</td>
+                        <td>B</td>
+                        <td>Very Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>70 - 79</td>
+                        <td>C</td>
+                        <td>Good</td>
+                    </tr>
+
+                    <tr>
+                        <td>60 - 69</td>
+                        <td>D</td>
+                        <td>Fair</td>
+                    </tr>
+
+                    <tr>
+                        <td>50 - 59</td>
+                        <td>E</td>
+                        <td>Pass</td>
+                    </tr>
+
+                    <tr>
+                        <td>0 - 49</td>
+                        <td>F</td>
+                        <td>Fail</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <footer>
+            © 2026 Jenga Tech |
+            50 Projects in 50 Days Challenge
+        </footer>
+
+    </main>
+
+</body>
+</html>

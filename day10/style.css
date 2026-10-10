@@ -1,0 +1,338 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #f57c00;
+}
+
+.project-tag {
+    background: #783e10;
+    color: #ffb86b;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    color: #94a3b8;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* CARDS */
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+/* STUDENT FORM */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+input,
+select {
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    border-color: #f57c00;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* SUBJECT ROWS */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.section-heading span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.subject-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.subject-row:last-child {
+    border-bottom: none;
+}
+
+.subject-row label {
+    flex: 1;
+    color: #e2e8f0;
+}
+
+.subject-row input {
+    width: 140px;
+}
+
+/* BUTTONS */
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calculate-btn {
+    background: #f57c00;
+    color: white;
+}
+
+.calculate-btn:hover {
+    background: #dc6d00;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #334155;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #475569;
+}
+
+/* RESULTS */
+
+.results {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.results h2 {
+    margin-bottom: 25px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.result-card {
+    background: #334155;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.result-card p {
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+.result-card h3 {
+    color: #f57c00;
+    font-size: 27px;
+    margin-top: 10px;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    padding: 20px;
+    background: #153d32;
+    border-radius: 10px;
+}
+
+.status strong {
+    color: #4ade80;
+}
+
+.sample-note {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* GRADING TABLE */
+
+.grading-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background: #334155;
+    color: #f57c00;
+}
+
+td {
+    color: #cbd5e1;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin: 40px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .card,
+    .results {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-row input {
+        width: 100px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
