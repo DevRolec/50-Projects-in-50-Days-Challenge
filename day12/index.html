@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 12 | Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <h1>JENGA<span>TRACKER</span></h1>
+                <p>Take control of your finances</p>
+            </div>
+
+            <span class="badge">DAY 12</span>
+        </header>
+
+        <!-- BALANCE CARD -->
+        <section class="balance-card">
+            <p>Total Balance</p>
+            <h2 id="balance">₦0.00</h2>
+            <span>Income minus expenses</span>
+        </section>
+
+        <!-- INCOME AND EXPENSE SUMMARY -->
+        <section class="summary">
+
+            <div class="summary-card income">
+                <p>↓ Total Income</p>
+                <h3 id="totalIncome">₦0.00</h3>
+            </div>
+
+            <div class="summary-card expense">
+                <p>↑ Total Expenses</p>
+                <h3 id="totalExpenses">₦0.00</h3>
+            </div>
+
+        </section>
+
+        <!-- TRANSACTION FORM -->
+        <section class="card">
+
+            <h2>Add New Transaction</h2>
+
+            <form id="transactionForm">
+
+                <div class="form-group">
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="e.g. Grocery shopping"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">
+                        Amount (₦)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        min="0.01"
+                        step="0.01"
+                        placeholder="Enter amount"
+                        required
+                    >
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="type">
+                            Transaction Type
+                        </label>
+
+                        <select id="type">
+                            <option value="expense">
+                                Expense
+                            </option>
+                            <option value="income">
+                                Income
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+                            <option>Food</option>
+                            <option>Transport</option>
+                            <option>Utilities</option>
+                            <option>Shopping</option>
+                            <option>Business</option>
+                            <option>Salary</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button type="submit" class="add-btn">
+                    + Add Transaction
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- TRANSACTION HISTORY -->
+        <section class="card">
+
+            <div class="section-heading">
+                <h2>Transaction History</h2>
+
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expenses</option>
+                </select>
+            </div>
+
+            <div id="transactionList">
+                <!-- Transactions appear here -->
+            </div>
+
+            <p id="emptyMessage" class="empty">
+                No transactions yet.
+            </p>
+
+        </section>
+
+        <footer>
+            © 2026 Jenga Tech |
+            50 Projects in 50 Days Challenge
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

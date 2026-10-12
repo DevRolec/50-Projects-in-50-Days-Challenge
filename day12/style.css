@@ -1,0 +1,317 @@
+
+/* GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 25px;
+}
+
+.header h1 span {
+    color: #f57c00;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.badge {
+    background: #78350f;
+    color: #fdba74;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* BALANCE */
+
+.balance-card {
+    background: linear-gradient(
+        135deg,
+        #ea580c,
+        #f57c00
+    );
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.balance-card p {
+    font-size: 14px;
+}
+
+.balance-card h2 {
+    font-size: 38px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.balance-card span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* SUMMARY */
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.summary-card {
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.summary-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.summary-card h3 {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+}
+
+.income {
+    background: #14532d;
+}
+
+.expense {
+    background: #7f1d1d;
+}
+
+/* CONTENT CARDS */
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 22px;
+}
+
+/* FORM */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+input,
+select {
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+    border-radius: 9px;
+    padding: 13px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #f57c00;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 15px;
+    background: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #dd7000;
+    transform: translateY(-2px);
+}
+
+/* TRANSACTIONS */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.section-heading select {
+    width: 140px;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #334155;
+}
+
+.transaction-info {
+    min-width: 0;
+    flex: 1;
+}
+
+.transaction-info h4 {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.transaction-info p {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.transaction-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.transaction-amount {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.positive {
+    color: #4ade80;
+}
+
+.negative {
+    color: #f87171;
+}
+
+.delete-btn {
+    background: #7f1d1d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #991b1b;
+}
+
+.empty {
+    text-align: center;
+    color: #94a3b8;
+    padding: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .balance-card h2 {
+        font-size: 30px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .section-heading {
+        flex-wrap: wrap;
+    }
+
+    .transaction {
+        flex-wrap: wrap;
+    }
+
+    .transaction-right {
+        margin-left: auto;
+    }
+}
