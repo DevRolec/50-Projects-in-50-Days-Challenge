@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 11 | Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="weather-app">
+
+        <!-- HEADER -->
+        <header>
+            <h1>JENGA<span>WEATHER</span></h1>
+            <p>Real-time weather information</p>
+        </header>
+
+        <!-- SEARCH SECTION -->
+        <form id="searchForm" class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+                aria-label="City name"
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+        </form>
+
+        <!-- STATUS MESSAGE -->
+        <p id="message" role="status"
+           aria-live="polite"></p>
+
+        <!-- WEATHER RESULTS -->
+        <section class="weather-card" id="weatherCard"
+                 hidden>
+
+            <div class="weather-main">
+
+                <h2 id="cityName">City</h2>
+
+                <p id="date">Date</p>
+
+                <div class="weather-icon" id="weatherIcon">
+                    ☀️
+                </div>
+
+                <h3 id="temperature">--°C</h3>
+
+                <p id="description">Weather Condition</p>
+
+            </div>
+
+            <!-- WEATHER DETAILS -->
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span class="detail-icon">💧</span>
+                    <h4 id="humidity">--%</h4>
+                    <p>Humidity</p>
+                </div>
+
+                <div class="detail">
+                    <span class="detail-icon">💨</span>
+                    <h4 id="windSpeed">-- km/h</h4>
+                    <p>Wind Speed</p>
+                </div>
+
+                <div class="detail">
+                    <span class="detail-icon">🌡️</span>
+                    <h4 id="feelsLike">--°C</h4>
+                    <p>Feels Like</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>
+                © 2026 Jenga Tech |
+                50 Projects in 50 Days
+            </p>
+            <p>
+                Weather data provided by Open-Meteo
+            </p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
