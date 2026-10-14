@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 14 | Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <h1>JENGA<span>PASS</span></h1>
+                <p>Secure Random Password Generator</p>
+            </div>
+
+            <span class="badge">DAY 14</span>
+        </header>
+
+        <section class="generator-card">
+
+            <h2>Generate Your Password</h2>
+
+            <p class="subtitle">
+                Customize your password settings below.
+            </p>
+
+            <!-- PASSWORD DISPLAY -->
+            <div class="password-box">
+
+                <input
+                    type="text"
+                    id="password"
+                    placeholder="Your password appears here"
+                    aria-label="Generated password"
+                    readonly
+                >
+
+                <button
+                    type="button"
+                    id="copyBtn"
+                    aria-label="Copy password"
+                    title="Copy password"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+            <!-- STRENGTH INDICATOR -->
+            <div class="strength-section">
+
+                <div class="strength-heading">
+                    <span>Password Strength</span>
+                    <strong id="strengthText">—</strong>
+                </div>
+
+                <div class="strength-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+            </div>
+
+            <!-- PASSWORD LENGTH -->
+            <div class="length-section">
+
+                <div class="length-heading">
+                    <label for="length">
+                        Password Length
+                    </label>
+
+                    <strong id="lengthValue">16</strong>
+                </div>
+
+                <input
+                    type="range"
+                    id="length"
+                    min="8"
+                    max="32"
+                    value="16"
+                >
+
+                <div class="range-labels">
+                    <span>8 characters</span>
+                    <span>32 characters</span>
+                </div>
+
+            </div>
+
+            <!-- CHARACTER OPTIONS -->
+            <fieldset class="options">
+
+                <legend>Include Characters</legend>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="uppercase"
+                        checked
+                    >
+                    Uppercase Letters (A-Z)
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="lowercase"
+                        checked
+                    >
+                    Lowercase Letters (a-z)
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="numbers"
+                        checked
+                    >
+                    Numbers (0-9)
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="symbols"
+                        checked
+                    >
+                    Symbols (!@#$%...)
+                </label>
+
+            </fieldset>
+
+            <!-- GENERATE BUTTON -->
+            <button
+                type="button"
+                id="generateBtn"
+            >
+                Generate Password
+            </button>
+
+            <p id="message"
+               role="status"
+               aria-live="polite"></p>
+
+        </section>
+
+        <footer>
+            © 2026 Jenga Tech |
+            50 Projects in 50 Days Challenge
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

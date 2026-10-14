@@ -1,0 +1,297 @@
+
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 26px;
+}
+
+.header h1 span {
+    color: #f57c00;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.badge {
+    background: #78350f;
+    color: #fdba74;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* GENERATOR CARD */
+
+.generator-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+.generator-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* PASSWORD DISPLAY */
+
+.password-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    background: #334155;
+    color: #ffffff;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: monospace;
+    outline: none;
+}
+
+.password-box input:focus {
+    border-color: #f57c00;
+}
+
+.password-box button {
+    padding: 12px 18px;
+    background: #475569;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.password-box button:hover {
+    background: #64748b;
+}
+
+/* PASSWORD STRENGTH */
+
+.strength-section {
+    margin-bottom: 30px;
+}
+
+.strength-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#strengthText {
+    color: #94a3b8;
+}
+
+.strength-bars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.bar {
+    height: 7px;
+    background: #475569;
+    border-radius: 10px;
+}
+
+.bar.weak {
+    background: #ef4444;
+}
+
+.bar.medium {
+    background: #f59e0b;
+}
+
+.bar.strong {
+    background: #22c55e;
+}
+
+/* PASSWORD LENGTH */
+
+.length-section {
+    margin-bottom: 30px;
+}
+
+.length-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.length-heading label {
+    font-size: 15px;
+}
+
+#lengthValue {
+    color: #f57c00;
+    font-size: 22px;
+}
+
+#length {
+    width: 100%;
+    accent-color: #f57c00;
+    cursor: pointer;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/* CHARACTER OPTIONS */
+
+.options {
+    border: none;
+    margin-bottom: 25px;
+}
+
+.options legend {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.options input {
+    width: 18px;
+    height: 18px;
+    accent-color: #f57c00;
+    cursor: pointer;
+}
+
+/* GENERATE BUTTON */
+
+#generateBtn {
+    width: 100%;
+    background: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 17px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+    background: #dd7000;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 2px solid #fdba74;
+    outline-offset: 3px;
+}
+
+#message {
+    text-align: center;
+    color: #fdba74;
+    font-size: 13px;
+    min-height: 22px;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 480px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .generator-card {
+        padding: 20px;
+    }
+
+    .generator-card h2 {
+        font-size: 21px;
+    }
+
+    .password-box input {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .password-box button {
+        padding: 10px;
+    }
+}
