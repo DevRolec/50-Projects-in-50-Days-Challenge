@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 14 | BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div>
+                <h1>JENGA<span>BMI</span></h1>
+                <p>Body Mass Index Calculator</p>
+            </div>
+
+            <span class="badge">DAY 14</span>
+        </header>
+
+        <!-- CALCULATOR -->
+        <section class="calculator-card">
+
+            <div class="intro">
+                <div class="icon">⚖️</div>
+
+                <h2>Calculate Your BMI</h2>
+
+                <p>
+                    Enter your weight and height
+                    to calculate your Body Mass Index.
+                </p>
+            </div>
+
+            <form id="bmiForm">
+
+                <div class="form-group">
+                    <label for="weight">
+                        Weight (kg)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="weight"
+                        min="0.1"
+                        step="any"
+                        placeholder="e.g. 70"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="height">
+                        Height (cm)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="height"
+                        min="0.1"
+                        step="any"
+                        placeholder="e.g. 175"
+                        required
+                    >
+                </div>
+
+                <button type="submit"
+                        class="calculate-btn">
+                    Calculate BMI
+                </button>
+
+                <button type="reset"
+                        class="reset-btn">
+                    Reset
+                </button>
+
+            </form>
+
+            <!-- RESULTS -->
+            <section id="result" class="result" hidden>
+
+                <p>Your BMI Result</p>
+
+                <h3 id="bmiValue">0.0</h3>
+
+                <strong id="bmiCategory">
+                    Category
+                </strong>
+
+                <p id="bmiMessage" class="result-message"></p>
+
+            </section>
+
+            <p id="errorMessage"
+               class="error"
+               role="alert"></p>
+
+        </section>
+
+        <!-- BMI REFERENCE TABLE -->
+        <section class="reference-card">
+
+            <h2>Adult BMI Categories</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>BMI Range</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy weight</td>
+                    </tr>
+
+                    <tr>
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+
+                    <tr>
+                        <td>30.0 and above</td>
+                        <td>Obesity</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="disclaimer">
+                This calculator is intended for adult
+                BMI screening and does not provide
+                a medical diagnosis.
+            </p>
+
+        </section>
+
+        <footer>
+            © 2026 Jenga Tech |
+            50 Projects in 50 Days Challenge
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

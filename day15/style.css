@@ -1,0 +1,289 @@
+
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 26px;
+}
+
+.header h1 span {
+    color: #f57c00;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.badge {
+    background: #78350f;
+    color: #fdba74;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CALCULATOR CARD */
+
+.calculator-card,
+.reference-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* FORM */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    font-size: 15px;
+    color: #cbd5e1;
+}
+
+.form-group input {
+    width: 100%;
+    background: #334155;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #f57c00;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+/* BUTTONS */
+
+.calculate-btn,
+.reset-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.calculate-btn {
+    background: #f57c00;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.calculate-btn:hover {
+    background: #dd7000;
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #334155;
+    color: white;
+}
+
+.reset-btn:hover {
+    background: #475569;
+}
+
+/* RESULT SECTION */
+
+.result {
+    margin-top: 30px;
+    background: #334155;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #475569;
+}
+
+.result[hidden] {
+    display: none;
+}
+
+.result > p:first-child {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.result h3 {
+    font-size: 55px;
+    color: #f57c00;
+    margin: 10px 0;
+}
+
+.result strong {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #475569;
+    font-size: 15px;
+}
+
+.result strong.underweight {
+    background: #1e40af;
+}
+
+.result strong.healthy {
+    background: #166534;
+}
+
+.result strong.overweight {
+    background: #92400e;
+}
+
+.result strong.obesity {
+    background: #991b1b;
+}
+
+.result-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.error {
+    color: #fca5a5;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* BMI REFERENCE TABLE */
+
+.reference-card h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background: #334155;
+    color: #fdba74;
+}
+
+td {
+    color: #cbd5e1;
+}
+
+.disclaimer {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 480px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .calculator-card,
+    .reference-card {
+        padding: 20px;
+    }
+
+    .intro h2 {
+        font-size: 22px;
+    }
+
+    .result h3 {
+        font-size: 45px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
