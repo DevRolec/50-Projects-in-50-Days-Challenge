@@ -1,25 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes App | Day 13</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 13 | Notes App</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <main class="container">
-        <!--HEADER-->
+
+        <!-- HEADER -->
         <header class="header">
             <div>
                 <h1>JENGA<span>NOTES</span></h1>
                 <p>Capture ideas. Stay organized.</p>
             </div>
 
-            <span class="badge">Day 13</span>
+            <span class="badge">DAY 13</span>
         </header>
 
         <!-- DASHBOARD -->
-         <section class="dashboard">
+        <section class="dashboard">
+
             <div class="stat-card">
                 <p>Total Notes</p>
                 <h2 id="totalNotes">0</h2>
@@ -30,30 +37,83 @@
                 <h2 id="pinnedNotes">0</h2>
             </div>
 
-         </section>
-         <!-- NOTE FORM -->
-          <section class="card">
+        </section>
+
+        <!-- NOTE FORM -->
+        <section class="card">
+
             <h2 id="formHeading">Create New Note</h2>
 
             <form id="noteForm">
+
                 <div class="form-group">
                     <label for="noteTitle">Note Title</label>
-                    <input type="text" id="noteTitle" placeholder="Enter Note Title"
-                    maxlength="100" required>
+                    <input
+                        type="text"
+                        id="noteTitle"
+                        placeholder="Enter note title"
+                        maxlength="100"
+                        required
+                    >
                 </div>
+
                 <div class="form-group">
-                    <label for="noteContent"> Note Content</label>
-                    <textarea 
-                     id="noteContent"
-                     placeholder="Write your note here..."
-                     rows="5"
-                     required
-                     ></textarea>
+                    <label for="noteContent">Note Content</label>
+                    <textarea
+                        id="noteContent"
+                        placeholder="Write your note here..."
+                        rows="5"
+                        required
+                    ></textarea>
                 </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="saveBtn">
+                        + Add Note
+                    </button>
+
+                    <button type="button"
+                            id="cancelBtn" hidden>
+                        Cancel Edit
+                    </button>
+                </div>
+
             </form>
 
-        
-          </section>
+        </section>
+
+        <!-- NOTES SECTION -->
+        <section class="notes-section">
+
+            <div class="section-heading">
+                <h2>Your Notes</h2>
+                <span id="resultCount">0 notes</span>
+            </div>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search notes..."
+                aria-label="Search notes"
+            >
+
+            <div id="notesGrid" class="notes-grid">
+                <!-- Notes added by JavaScript -->
+            </div>
+
+            <p id="emptyMessage" class="empty">
+                No notes yet. Create your first note!
+            </p>
+
+        </section>
+
+        <footer>
+            © 2026 Jenga Tech |
+            50 Projects in 50 Days Challenge
+        </footer>
+
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

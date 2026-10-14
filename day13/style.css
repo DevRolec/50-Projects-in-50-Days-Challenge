@@ -1,0 +1,311 @@
+
+/* GLOBAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: 27px;
+}
+
+.header h1 span {
+    color: #f57c00;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.badge {
+    background: #78350f;
+    color: #fdba74;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.stat-card p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    color: #f57c00;
+    margin-top: 10px;
+}
+
+/* FORM CARD */
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 35px;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+input,
+textarea {
+    background: #334155;
+    color: white;
+    border: 1px solid #475569;
+    padding: 14px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-family: inherit;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #f57c00;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.form-actions button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#saveBtn {
+    background: #f57c00;
+    color: white;
+}
+
+#saveBtn:hover {
+    background: #dd7000;
+}
+
+#cancelBtn {
+    background: #475569;
+    color: white;
+}
+
+#cancelBtn[hidden] {
+    display: none;
+}
+
+/* NOTES SECTION */
+
+.notes-section {
+    margin-bottom: 35px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+#searchInput {
+    margin-bottom: 25px;
+}
+
+/* NOTES GRID */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 260px), 1fr)
+    );
+    gap: 20px;
+}
+
+.note-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.note-card.pinned {
+    border-color: #f57c00;
+}
+
+.note-card h3 {
+    font-size: 18px;
+    overflow-wrap: anywhere;
+}
+
+.note-content {
+    color: #cbd5e1;
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    flex: 1;
+}
+
+.note-date {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.pinned-label {
+    color: #fb923c;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.note-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.note-actions button {
+    border: none;
+    border-radius: 7px;
+    padding: 9px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.pin-btn {
+    background: #92400e;
+}
+
+.edit-btn {
+    background: #2563eb;
+}
+
+.delete-btn {
+    background: #b91c1c;
+}
+
+.note-actions button:hover {
+    filter: brightness(1.15);
+}
+
+.empty {
+    text-align: center;
+    padding: 40px 15px;
+    color: #94a3b8;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 40px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
