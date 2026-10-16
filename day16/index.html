@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Age Verification</title>
+</head>
+<body>
+
+    <h1>Age Verification System</h1>
+
+    <form id="ageForm">
+
+        <label for="age">Enter Your Age:</label>
+
+        <input
+            type="number"
+            id="age"
+            min="0"
+            max="120"
+            placeholder="e.g. 20"
+            required
+        >
+
+        <button type="submit">
+            Verify Age
+        </button>
+
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
