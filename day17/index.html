@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 17 | Digital Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>JENGA<span>STOPWATCH</span></h1>
+            <p>Day 17 — Digital Stopwatch</p>
+        </header>
+
+        <!-- STOPWATCH DISPLAY -->
+        <section class="stopwatch">
+
+            <p class="label">ELAPSED TIME</p>
+
+            <div class="time-display" id="display"
+                 role="timer" aria-live="off">
+                00:00:00.00
+            </div>
+
+            <p class="time-label">HH : MM : SS . CS</p>
+
+            <!-- CONTROL BUTTONS -->
+            <div class="controls">
+
+                <button id="startBtn" type="button">
+                    Start
+                </button>
+
+                <button id="lapBtn" type="button" disabled>
+                    Lap
+                </button>
+
+                <button id="resetBtn" type="button">
+                    Reset
+                </button>
+
+            </div>
+
+            <p id="status" class="status">Ready</p>
+
+        </section>
+
+        <!-- LAP HISTORY -->
+        <section class="laps-section">
+
+            <div class="laps-header">
+                <h2>Lap History</h2>
+                <span id="lapCount">0 laps</span>
+            </div>
+
+            <ul id="lapList" class="lap-list"></ul>
+
+            <p id="emptyMessage" class="empty-message">
+                No laps recorded yet.
+            </p>
+
+        </section>
+
+        <footer>
+            <p>Jenga Tech | 50 Projects in 50 Days</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
