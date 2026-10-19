@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 18 | Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>JENGA<span>GALLERY</span></h1>
+            <p>Day 18 — Interactive Image Gallery</p>
+        </header>
+
+        <!-- CATEGORY FILTERS -->
+        <nav class="filters" aria-label="Image categories">
+
+            <button class="filter-btn active"
+                    data-category="all"
+                    type="button">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-category="nature"
+                    type="button">
+                Nature
+            </button>
+
+            <button class="filter-btn"
+                    data-category="animals"
+                    type="button">
+                Animals
+            </button>
+
+            <button class="filter-btn"
+                    data-category="architecture"
+                    type="button">
+                Architecture
+            </button>
+
+            <button class="filter-btn"
+                    data-category="travel"
+                    type="button">
+                Travel
+            </button>
+
+        </nav>
+
+        <!-- GALLERY INFORMATION -->
+        <div class="gallery-info">
+            <h2>Explore Photos</h2>
+            <p id="imageCount">0 images</p>
+        </div>
+
+        <!-- GALLERY GRID -->
+        <section
+            class="gallery-grid"
+            id="gallery"
+            aria-label="Photo gallery">
+        </section>
+
+        <footer>
+            Jenga Tech | 50 Projects in 50 Days
+        </footer>
+
+    </main>
+
+
+    <!-- LIGHTBOX MODAL -->
+    <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image preview"
+        hidden>
+
+        <div class="lightbox-content">
+
+            <button
+                id="closeBtn"
+                class="close-btn"
+                type="button"
+                aria-label="Close preview">
+                &times;
+            </button>
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="">
+
+            <div class="lightbox-details">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+            </div>
+
+            <div class="lightbox-controls">
+
+                <button id="prevBtn" type="button">
+                    &#8592; Previous
+                </button>
+
+                <span id="imagePosition"></span>
+
+                <button id="nextBtn" type="button">
+                    Next &#8594;
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

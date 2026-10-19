@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Day 19 | Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <h1>JENGA<span>FX</span></h1>
+            <p>Day 19 — Currency Converter</p>
+        </header>
+
+        <section class="converter-card">
+
+            <h2>Currency Converter</h2>
+
+            <p class="subtitle">
+                Convert currencies using online exchange rates.
+            </p>
+
+            <form id="converterForm">
+
+                <!-- AMOUNT -->
+                <div class="form-group">
+
+                    <label for="amount">Amount</label>
+
+                    <input
+                        type="number"
+                        id="amount"
+                        min="0.01"
+                        step="any"
+                        value="100"
+                        required
+                    >
+
+                </div>
+
+                <!-- CURRENCY SELECTION -->
+                <div class="currency-row">
+
+                    <div class="form-group">
+
+                        <label for="fromCurrency">From</label>
+
+                        <select id="fromCurrency">
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="NGN">NGN - Nigerian Naira</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="GHS">GHS - Ghanaian Cedi</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                            <option value="ZAR">ZAR - South African Rand</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                        </select>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="swapBtn"
+                        class="swap-btn"
+                        aria-label="Swap currencies">
+                        &#8646;
+                    </button>
+
+                    <div class="form-group">
+
+                        <label for="toCurrency">To</label>
+
+                        <select id="toCurrency">
+                            <option value="NGN">NGN - Nigerian Naira</option>
+                            <option value="USD">USD - US Dollar</option>
+                            <option value="GBP">GBP - British Pound</option>
+                            <option value="EUR">EUR - Euro</option>
+                            <option value="CAD">CAD - Canadian Dollar</option>
+                            <option value="GHS">GHS - Ghanaian Cedi</option>
+                            <option value="JPY">JPY - Japanese Yen</option>
+                            <option value="CNY">CNY - Chinese Yuan</option>
+                            <option value="ZAR">ZAR - South African Rand</option>
+                            <option value="INR">INR - Indian Rupee</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    id="convertBtn"
+                    class="convert-btn">
+                    Convert Currency
+                </button>
+
+            </form>
+
+            <!-- ERROR MESSAGE -->
+            <p id="errorMessage" role="alert"></p>
+
+            <!-- RESULT -->
+            <section id="result" class="result" hidden>
+
+                <p class="result-label">Converted Amount</p>
+
+                <h3 id="convertedAmount">0.00</h3>
+
+                <p id="exchangeRate"></p>
+
+                <p id="lastUpdated"></p>
+
+            </section>
+
+        </section>
+
+        <footer>
+            Jenga Tech | 50 Projects in 50 Days
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
