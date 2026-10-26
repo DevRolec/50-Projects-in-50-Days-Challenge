@@ -33,4 +33,4 @@ const heightNew = 1.91;
 
 const bmi = weight / (height ** 2);
 
-console.log(bmi.toFixed(2));
+console.log(bmi.toFixed(1));
