@@ -53,3 +53,4 @@ console.log(typeof sum)
 
 console.log(5 == "5"); // allows coersion
 console.log(5 === "5"); //compares without converting btw diff data types
+
