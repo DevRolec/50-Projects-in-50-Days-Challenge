@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+    <h1>Student Grade Calculator</h1>
+    <form id="gradeForm">
+
+    <label for="studentName">Student Name</label>
+    <input type="text" id="studentName" required>
+
+    <label for="score1">Score 1</label>
+    <input type="number" id="score1"
+    min="0" max="100" step="any" required>
+
+    <label for="score2">Score 2</label>
+    <input type="number" id="score2"
+    min="0" max="100" step="any" required>
+
+    <label for="score3">Score 3</label>
+    <input type="number" id="score3"
+    min="0" max="100" step="any" required>
+
+    <button type="submit">Calculate Average</button>
+    </form>
+
+    <p id="result" aria-live="polite"></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
