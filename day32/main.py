@@ -63,7 +63,7 @@ def generate_report(name, scores):
     print("Name :", name)
     print("Scores :", scores)
     print("Average :", f"Your average is {average:.2f}")
-    print("Grade :", get_grade(average))
+    print("Grade :", grade)
     print("Status :", status)
 
 
