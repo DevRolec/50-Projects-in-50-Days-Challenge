@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenga Mart...Smart POS Supermarket System.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛒Jenga Mart - Smart POS</h1>
+    <p>Built with JavaScript Functions.  No Frameworks required.</p>
+</header>
+<main>
+    <section class="stats" aria-label="Session statistics">
+        <div class="stat"><label>Items in Cart</label><strong id="item-count">0</strong></div>
+        <div class="stat"><label>Completed Sales</label><strong id="sales-count">0</strong></div>
+        <div class="stat"><label>Session Revenue</label><strong id="revenue">0</strong></div>
+    </section>
+    <section class="layout">
+        <div class="panel">
+            <h2>Available Products</h2>
+            <div class="products" id="products"></div>
+        </div>
+        <div class="panel">
+            <h2>Customer Cart</h2>
+            <div id="cart-items" aria-live="polite"></div>
+            <div class="line"><span>Subtotal</span> <strong id="subtotal">₦0</strong></div>
+            <div class="line"><span>Discount (5% on ₦10,000+)</span><strong id="discount">₦0</strong></div>
+            <div class="line-total"><span>Total Due</span><span id="total">₦0</span></div>
+            <button class="checkout" id="checkout" onclick="checkout()">Complete Sale & Print Receipt</button>
+            <p class="note">Practice Project Only. No real payments are processed.</p>
+            <section class="receipt" id="receipt-section">
+                <h2>Latest Receipt</h2>
+                <pre id="receipt"></pre>
+                <button onclick="window.print()">Print Page</button>
+            </section>
+        </div>
+    </section>
+
+</main>
+
+<footer>Jenga Tech Institute. Functions → State → Interface → Working System </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

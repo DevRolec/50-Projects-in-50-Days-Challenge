@@ -1,0 +1,97 @@
+:root {
+    --bg: #f3f6fb; --navy: #101e33; --orange: #f97316; --muted: #64748b; --edge: #e2e8f0;
+}
+* {box-sizing: border-box;}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--navy);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+header {
+   background: var(--navy);
+   color: white;
+   padding: 24px max(20px, calc((100% - 1140px)/2));
+}
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+header p {
+    margin: 5px 0 0;
+    color: #cbd5e1;
+}
+main {
+    max-width: 1140px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+.stat, .panel {
+    background: white;
+    border: 1px solid var(--edge);
+    border-radius: 16px;
+    box-shadow: 0 5px 22px #012855;
+}
+.stat {
+    padding: 18px;
+}
+.stat label {
+    color: var(--muted);
+    font-size: 23px;
+}
+.stat strong {
+    display: block;
+    margin-top: 7px;
+    font-size: 23px;
+}
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.panel {
+    padding: 22px;
+}
+h2 {
+    font-size: 18px;
+    margin: 0 0 16px;
+    color: #f97316;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.product {
+    border:  1px solid var(--edge);
+    border-radius: 12px;
+    padding: 17px;
+}
+.product .emoji {
+    font-size: 30px;
+}
+.product h3 {
+    font-size: 15px;
+    margin: 9px 0 5px;
+}
+.product p {
+    color: var(--muted);
+    margin: 0 0 13px;
+}
+button {
+    cursor: pointer;
+    font: inherit;
+    border-radius: 9px;
+    padding: 9px 13px;
+    border: 1px solid var(--edge);
+    background: white;
+}
+button :hover {
+    filter: brightness(.97);
+}
