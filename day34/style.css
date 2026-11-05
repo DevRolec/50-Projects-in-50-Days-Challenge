@@ -95,3 +95,44 @@ button {
 button :hover {
     filter: brightness(.97);
 }
+.add, .checkout {
+    background: var(--orange);
+    color: white;
+    border: 0;
+    font-weight: 700;
+}
+.add {
+    width: 100%;
+}
+.cart-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--edge);
+}
+.cart-item small {
+    display: block;
+    color: var(--muted);
+    margin-top: 4px;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.controls button {
+    padding: 5px 10px;
+}
+.empty {
+    padding: 18px;
+    color: var(--muted);
+    text-align: center;
+    background: var(--bg);
+    border-radius: 10px;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
