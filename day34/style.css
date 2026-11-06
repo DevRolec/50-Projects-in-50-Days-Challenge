@@ -136,3 +136,43 @@ button :hover {
     justify-content: space-between;
     margin-top: 12px;
 }
+.line-total {
+    font-weight: 800;
+    font-size: 21px;
+    border-top: 1px solid var(--edge);
+    padding-top: 14px;
+}
+.checkout {
+    width: 100%;
+    padding: 13px;
+    margin-top: 18px;
+}
+.checkout:disabled {
+    background: var(--edge);
+    cursor: not-allowed;
+}
+.note {
+    color: var(--muted);
+    font-size: 12px;
+}
+.receipt {
+    margin-top: 20px;
+    display: none;
+}
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.6;
+    background: #101e33;
+    color: var(--edge);
+    border-radius: 12px;
+    padding: 19px;
+}
+footer {
+    text-align: center;
+    color: var(--muted);
+    word-break: break-word;
+    padding: 25px;
+    font-size: 13px;
+}
+
