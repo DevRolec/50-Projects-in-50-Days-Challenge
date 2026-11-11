@@ -54,6 +54,6 @@ console.log(students);
 //.indexOf(), .includes(), .slice(), .splice()
 
 console.log(students.indexOf("Mercy")); 
-const studebt 
+
 
 
