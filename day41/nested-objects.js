@@ -22,3 +22,5 @@ const studentes = {
 console.log(studentes.guardian.name);
 
 console.log(studentes.sponsor?.name);
+
+//Arrays in an Object...
