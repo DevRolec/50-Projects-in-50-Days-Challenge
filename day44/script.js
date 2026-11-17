@@ -27,5 +27,17 @@ for (let student of students) {
 
 //Get elements by Tagname... Id... ClassName...
 
-const paragraphs = document.getElementsByTagName("p");
+const paragraph = document.getElementsByTagName("p");
+console.log(paragraph);
+
+//QuerySelectorALL()
+const paragraphs = document.querySelectorAll("p");
 console.log(paragraphs);
+
+//querySelector  forEach()
+paragraphs.forEach((paragraph) => {
+    console.log(paragraph.textContent);
+});
+//Comparison of selection methods...
+//getElementById(), getElementByClassName(), getElementsByTagName(), querySelector()
+//querySelectorAll()
