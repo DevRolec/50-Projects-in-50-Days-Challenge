@@ -41,3 +41,28 @@ paragraphs.forEach((paragraph) => {
 //Comparison of selection methods...
 //getElementById(), getElementByClassName(), getElementsByTagName(), querySelector()
 //querySelectorAll()
+
+console.log("======================================================================")
+//innerHTML, .innerText, .textContent
+const headings = document.querySelector("#heading");
+headings.textContent = "Verify before posts";
+
+const goals = document.querySelector("#goals");
+goals.textContent = "These are the new Goals";
+
+
+const vision = document.querySelector("#vision");
+vision.textContent = "Great minds";
+//.innerText
+
+vision.innerText = "Hello Developers";
+
+//.innerHTML
+const container = document.querySelector("#container");
+container.innerHTML = `
+    <h2>Student Information</h2>
+    <p class="student">Name: Roland</p>
+    <p>Course: JavaScript</p>
+`;
+container.innerHTML = userInput; //wrong
+container.textContent = userInput;
