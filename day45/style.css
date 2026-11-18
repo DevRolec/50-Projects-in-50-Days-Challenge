@@ -1,0 +1,22 @@
+body {
+    background-color: #f9f9f6;
+    color: #790606;
+    transition: 1.6s;
+}
+.dark-mode {
+    background: #131313;
+    color: #ffffff;
+}
+
+#themeButton {
+    background-color: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
