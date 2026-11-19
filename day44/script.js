@@ -43,7 +43,7 @@ paragraphs.forEach((paragraph) => {
 //querySelectorAll()
 
 console.log("======================================================================")
-//innerHTML, .innerText, .textContent
+//.innerHTML, .innerText, .textContent
 const headings = document.querySelector("#heading");
 headings.textContent = "Verify before posts";
 
