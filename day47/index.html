@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Validations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <!-- Form Elements.-->
+         <label for="fullName">Full Name: </label>
+         <input type="text" id="fullName" name="fullname"> <br>
+         <button type="submit" id="submit">Submit</button>
+    </form>
+    <form>
+        <input type="text"
+        id="fullname"
+        value="Roland">
+
+    </form> <br>
+    <form>
+        <input type="text" name="name">  <br>
+
+        <button type="submit">Submit</button><br>
+
+        <button type="reset">Reset</button><br>
+
+        <button type="button">Custom Action</button> <br>
+        
+    </form> <br>
+
+    <!--Building Different Types of Form Inputs.-->
+    <form action="#">
+        <label for="names">Full Name:</label>
+        <input type="text"
+        id="names"
+        name="names"
+        required
+        minlength="3"
+        maxlength="50"
+        autocomplete="name"
+        placeholder="Enter your full name">
+        
+    </form> <br>
+    <!--Email Inputs-->
+    <form action="#">
+        <label for="email">Email:</label>
+        <input type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your E-mail."
+        required>
+        <button type="submit">Submit Email</button>
+    </form> <br>
+
+    <form action="#">
+        <input type="password"
+        id="password"
+        name="password"
+        required>
+    </form>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
